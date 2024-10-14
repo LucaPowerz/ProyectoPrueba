@@ -1,0 +1,159 @@
+body {
+    background: #010A13;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 600px; 
+    height: 300px;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Boton que inicia la base de datos*/
+button {
+    font-family: 'Marcellus SC', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 5px 15px; 
+    background: #1e2328;
+    color: #cdbe91;
+    box-shadow: inset 0 0 2px #000000;
+    border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
+    border-image-slice: 1;
+    border-width: 2px;
+  }
+  
+  button:hover {
+    text-shadow: 0 0 5px #ffffff80;
+    box-shadow: 0 0 8px 0 #ffffff50;
+    background: linear-gradient(to bottom, #1e2328, #433d2b);
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  
+  button:active {
+    text-shadow: none;
+    box-shadow: none;
+    color: #cdbe9130;
+  }
+
+/* Colocación de cartas */
+#lols {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 50px 10px;
+    justify-items: center;    
+}
+/* Fichas de campeones */
+.card {
+    font-family: DejaVu Sans Mono, monospace;
+    background: #1e2328;
+    color: #cdbe91;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid;
+    border-image: #cdbe91 solid 10px;
+    font-weight: bold;
+}
+/* Descripción del campeon */
+.desc {
+    width: 200px;
+    font-weight: lighter;
+}
+.img {
+    width: 200px;
+    
+}
+
+img{
+    transition: transform 1.5s ease;
+}
+
+.card:hover img{
+    transform: scale(1.4);
+}
+
+/* Estilos para el desplegable */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    box-shadow: inset 0 0 2000px #000000;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+/* Contenido del desplegable */
+.modal-content {
+    background: #010A13;
+    margin: 15% auto; 
+    padding: 20px; 
+    border: 1px solid #888; 
+    width: 700px; 
+    height: 600px;
+    border-radius: 10px; 
+    border: 5px solid #cdbe91;
+    display: flex;
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    color: red; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+
+}
+
+
+/* Imagen del campeón dentro del desplegable*/
+#modalChampionImage {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #cdbe91;
+}
+
+/* Estilos para el título del campeón */
+#modalChampionName {
+    margin: 10px 0; 
+    font-size: 24px; 
+    color: #cdbe91;
+    
+
+}
+
+/* Estilos para la descripción del campeón */
+#modalChampionDescription {
+    margin-top: 10px; 
+    font-size: 16px; 
+    color: #555;
+}
+.info{
+    padding: 2%;
+}
+/*Boton de cerrar con stilo*/
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
